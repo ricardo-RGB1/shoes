@@ -1,5 +1,6 @@
 import Button from "../components/Button";
 import { shoe8 } from "../assets/images";
+import { FaChevronRight } from "react-icons/fa"; 
 
 const SuperQuality = () => {
   return (
@@ -15,8 +16,10 @@ const SuperQuality = () => {
           Ensuring premium quality and comfort, our shoes are designed to be
           lightweight and durable whether you're training indoors or on the go.
         </p>
-        <div className="mt-11">
-          <Button label="View details" />
+        <div className="mt-11 flex flex-wrap gap-7">
+          <Button label="Shop now" />
+          <span className="my-auto text-xl text-blue-500">
+            <a href="/" className="flex gap-3 hover:underline">Learn More <FaChevronRight className="text-md my-auto" /></a></span> 
         </div>
       </div>
 
